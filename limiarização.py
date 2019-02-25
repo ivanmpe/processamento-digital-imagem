@@ -7,9 +7,9 @@ Created on Tue Jan  8 12:59:27 2019
 
 import cv2
 
-img = cv2.imread("teste.jpg", 0)
+img = cv2.imread("original.png", 0)
 
-limiar, imgLimiar = cv2.threshold(img, 128, 255, cv2.THRESH_TOZERO_INV)
+limiar, imgLimiar = cv2.threshold(img, 177, 255, cv2.THRESH_BINARY)
 
 cv2.imshow("Limiar", imgLimiar)
 cv2.waitKey(0)
